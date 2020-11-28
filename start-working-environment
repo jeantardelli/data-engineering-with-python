@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "starting elasticsearch..."
+sudo -i service kibana start
+echo "done."
+
+echo "starting elasticsearch"
+sudo -i service elasticsearch start
+echo "done."

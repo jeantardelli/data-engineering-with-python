@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "stoping elasticsearch..."
+sudo -i service kibana start
+echo "done."
+
+echo "stoping elasticsearch"
+sudo -i service elasticsearch start
+echo "done."
