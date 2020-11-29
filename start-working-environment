@@ -1,9 +1,18 @@
 #!/bin/bash
 
-echo "starting elasticsearch..."
+echo "starting kibana..."
 sudo -i service kibana start
 echo "done."
 
-echo "starting elasticsearch"
+echo "starting elasticsearch..."
 sudo -i service elasticsearch start
+echo "done."
+
+echo "starting airflow webserver"
+export AIRFLOW_HOME=~/airflow
+gnome-terminal --command="airflow webserver"
+echo "done."
+
+echo "starting airflow scheduler"
+gnome-terminal --command="airflow scheduler"
 echo "done."

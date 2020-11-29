@@ -1,9 +1,17 @@
 #!/bin/bash
 
-echo "stoping elasticsearch..."
-sudo -i service kibana start
+echo "stop kibana..."
+sudo -i service kibana stop
 echo "done."
 
-echo "stoping elasticsearch"
-sudo -i service elasticsearch start
+echo "stop elasticsearch..."
+sudo -i service elasticsearch stop
+echo "done."
+
+echo "stop airflow webserver"
+ps aux | grep webserver | grep -v grep | awk '{print $2}' | xargs kill -9
+echo "done."
+
+echo "stop airflow scheduler"
+ps aux | grep scheduler | grep -v grep | awk '{print $2}' | xargs kill -9
 echo "done."

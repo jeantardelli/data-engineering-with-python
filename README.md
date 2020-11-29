@@ -1,8 +1,8 @@
-# Data Engineering w/ Python
+## Data Engineering w/ Python
 
 This repo contains the source code for data engineering with Python.
 
-# Tools Used
+## Tools
 
 Following is the list of the tools that will be used:
 
@@ -12,5 +12,19 @@ Following is the list of the tools that will be used:
 * Data Processing Engine: Apache Spark
 * Data Pipelines: Apache Airflow, Apache NiFi
 
-# License
+## Setup working environment
+
+To setup the working environment run the command:
+
+```bash
+$ source start-working-environment
+```
+
+If you want to stop/kill the working environment, run the command:
+
+```bash
+$ ./stop-working-environment
+```
+
+## License
 [MIT](LICENSE)
