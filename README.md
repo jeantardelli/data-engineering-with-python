@@ -15,6 +15,8 @@ Following is the list of the tools that will be used:
 ## Directories
 
 * writing-reading-data: this directory contains modules that create and read fake data
+* sql-user: this directory contains the query to create a user and its credentials data
+* load-database: this directory contains modules that load and query data from MySQL
 
 ## Setup working environment
 
