@@ -12,6 +12,10 @@ Following is the list of the tools that will be used:
 * Data Processing Engine: Apache Spark
 * Data Pipelines: Apache Airflow, Apache NiFi
 
+## Directories
+
+* writing-reading-data: this directory contains modules that create and read fake data
+
 ## Setup working environment
 
 To setup the working environment run the command:
