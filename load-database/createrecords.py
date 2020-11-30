@@ -6,7 +6,7 @@ using the mysql-connector-python library.
 import mysql.connector
 
 # Create a connection to MySQL
-db = mysql.connector.connect(option_files="/../sql-user/my.ini")
+db = mysql.connector.connect(option_files="../sql-user/my.ini")
 cursor = db.cursor()
 
 # Define the query template and the parameters to submit with it
