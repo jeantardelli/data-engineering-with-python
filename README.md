@@ -14,6 +14,7 @@ This repo contains the source code for data engineering with Python.
 * sql-user: this directory contains the query to create a user and its credentials data
 * load-database: this directory contains modules that load and query data from MySQL
 * load-nosql: this directory contains modules that load and query data from Elasticsearch
+* scooter-data: this directory contains the scooter dataset and modules that handle data wrangling with pandas
 
 ## Setup working environment
 
