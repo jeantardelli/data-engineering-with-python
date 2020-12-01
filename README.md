@@ -2,15 +2,11 @@
 
 This repo contains the source code for data engineering with Python.
 
-## Tools
+## Software and Hardware List
 
-Following is the list of the tools that will be used:
-
-* Programming Language: Python
-* SQL Database: MySQL
-* NoSQL Database: Elasticsearch + Kibana
-* Data Processing Engine: Apache Spark
-* Data Pipelines: Apache Airflow, Apache NiFi
+| Software required                                                                               | OS used        |
+| ------------------------------------------------------------------------------------------------|----------------|
+|   Python 3.x, Spark 3.x, Nifi 1.x, MySQL 8.0.x, Elasticsearch 7.x, Kibana 7.x, Apache Kafka 2.x | Linux (Ubuntu) |
 
 ## Directories
 
