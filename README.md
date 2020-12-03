@@ -15,6 +15,8 @@ This repo contains the source code for data engineering with Python.
 * load-database: this directory contains modules that load and query data from MySQL
 * load-nosql: this directory contains modules that load and query data from Elasticsearch
 * scooter-data: this directory contains the scooter dataset and modules that handle data wrangling with pandas
+* nifi-templates: this directory contains the Apache Nifi templates (they do the same task that do the Airflow pipelines) 
+* nifi-files: this directory contains the final files from different Apache Nifi template pipelines.
 
 ## Setup working environment
 
