@@ -1,0 +1,58 @@
+{
+    "request_type": {
+        "related_issues_url": "https://seeclickfix.com/api/v2/issues?lat=35.2151229955326&lng=-106.702564017243&request_types=17877&sort=distance", 
+        "title": "Missed Trash Pick Up", 
+        "url": "https://seeclickfix.com/api/v2/request_types/17877", 
+        "organization": "City of Albuquerque", 
+        "id": 17877
+    }, 
+    "shortened_url": null, 
+    "rating": 1, 
+    "description": "", 
+    "created_at": "2020-12-04T15:25:56-05:00", 
+    "opendate": "2020-12-04", 
+    "media": {
+        "image_square_100x100": null, 
+        "image_full": null, 
+        "video_url": null, 
+        "representative_image_url": "https://seeclickfix.com/assets/categories/trash-253f6f37c76ecf513079ab225a5a2acb301dc27c869c749bc6c592b779207bd5.png"
+    }, 
+    "private_visibility": false, 
+    "transitions": {
+        "open_url": "https://seeclickfix.com/api/v2/issues/9008844/open"
+    }, 
+    "point": {
+        "coordinates": [
+            -106.702564017243, 
+            35.2151229955326
+        ], 
+        "type": "Point"
+    }, 
+    "updated_at": "2020-12-04T15:30:59-05:00", 
+    "id": 9008844, 
+    "lat": 35.2151229955326, 
+    "coords": "35.2151229955, -106.702564017", 
+    "summary": "Missed Trash Pick Up", 
+    "address": "5823 Nightingale Ct Nw Albuquerque, NM, 87114, USA", 
+    "closed_at": "2020-12-04T15:30:58-05:00", 
+    "lng": -106.702564017243, 
+    "comment_url": "https://seeclickfix.com/api/v2/issues/9008844/comments", 
+    "reporter": {
+        "role": "Registered User", 
+        "civic_points": 0, 
+        "avatar": {
+            "square_100x100": "https://seeclickfix.com/assets/no-avatar-100-4c3cf895b7ee80b7e97c54d1c7ee80ef9e8d176702efb9a7dcf02abb38ffa5b8.png", 
+            "full": "https://seeclickfix.com/assets/no-avatar-100-4c3cf895b7ee80b7e97c54d1c7ee80ef9e8d176702efb9a7dcf02abb38ffa5b8.png"
+        }, 
+        "html_url": "https://seeclickfix.com/users/1288100", 
+        "name": "City of Albuquerque (ABQ311) Neighbor", 
+        "id": 1288100, 
+        "witty_title": ""
+    }, 
+    "flag_url": "https://seeclickfix.com/api/v2/issues/9008844/flag", 
+    "url": "https://seeclickfix.com/api/v2/issues/9008844", 
+    "html_url": "https://seeclickfix.com/issues/9008844", 
+    "acknowledged_at": "2020-12-04T15:25:58-05:00", 
+    "status": "Closed", 
+    "reopened_at": null
+}
