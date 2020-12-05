@@ -1,4 +1,4 @@
 #!/bin/bash
 
-source ./venv/bin/activate
-python ./data-engineering-with-python/writing-reading-data/printfake.py
+source ../venv/bin/activate
+python ./writing-reading-data/loadcsv.py

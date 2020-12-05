@@ -14,7 +14,7 @@ mywriter.writerow(header)
 
 for _ in range(1000):
     mywriter.writerow(
-            [fake.name(), fake.random_int(min=18, max=80, step=1),
+            [fake.name(), fake.random_int(min=1, max=1000, step=1),
              fake.street_address(), fake.city(), fake.state(),
              fake.zipcode(),fake.longitude(), fake.latitude()]
             )
