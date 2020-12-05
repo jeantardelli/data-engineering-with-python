@@ -22,7 +22,8 @@ This repo contains the source code for data engineering with Python.
 * scooter-data: this directory contains the scooter dataset and wrangling data modules (pandas)
 * nifi-templates: this directory contains different Apache Nifi pipeline templates
 * nifi-files: this directory contains the files derived from the Nifi template pipelines
-* great_expectations: contains all the important components of a local Great Expectation deployment. 
+* nifi-scripts: this directory contains shell scripts that are used with ExecuteStreamCommand in Nifi
+* great_expectations: contains all the important components of a local Great Expectation deployment
 
 ## Setup working environment
 

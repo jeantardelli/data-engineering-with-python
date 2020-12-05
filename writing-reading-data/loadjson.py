@@ -5,7 +5,7 @@ This module contains the code that writes lots of data using the faker library.
 import json
 from faker import Faker
 
-output = open('/../data.json', 'w')
+output = open('../data.json', 'w')
 fake = Faker()
 alldata = {}
 alldata['records'] = []

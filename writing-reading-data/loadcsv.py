@@ -5,7 +5,7 @@ This module contains the code that writes lots of data using the faker library.
 import csv
 from faker import Faker
 
-output = open('/../data.csv', 'w')
+output = open('../data.csv', 'w')
 fake = Faker()
 header = ['name', 'age', 'street', 'city', 'state', 'zip', 'lng', 'lat']
 

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+source ./venv/bin/activate
+python ./data-engineering-with-python/great_expectations/uncommitted/run_people-checkpoint-init.py
