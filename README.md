@@ -23,6 +23,7 @@ This repo contains the source code for data engineering with Python.
 * nifi-templates: this directory contains different Apache Nifi pipeline templates
 * nifi-files: this directory contains the files derived from the Nifi template pipelines
 * nifi-scripts: this directory contains shell scripts that are used with ExecuteStreamCommand in Nifi
+* nifi-versioning: this directory contains Nifi pipelines with version control (NiFi Regsitry)
 * great_expectations: contains all the important components of a local Great Expectation deployment
 
 ## Setup working environment
