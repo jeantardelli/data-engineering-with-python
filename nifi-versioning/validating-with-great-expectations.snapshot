@@ -46,6 +46,36 @@
           "destination" : {
             "comments" : "",
             "groupId" : "99de4b92-8c70-3e7f-a4dd-50192a5bcec1",
+            "id" : "6661ed01-a400-323e-a0c0-765b6cb88918",
+            "name" : "PutElasticsearchHttp",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "99de4b92-8c70-3e7f-a4dd-50192a5bcec1",
+          "identifier" : "749546e4-6cff-3183-add4-af002af6f089",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "99de4b92-8c70-3e7f-a4dd-50192a5bcec1",
+            "id" : "beaaf0b3-f333-37f2-8716-fe38739bc4dc",
+            "name" : "Failed",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "99de4b92-8c70-3e7f-a4dd-50192a5bcec1",
             "id" : "7a779ded-ea67-3781-b7bd-86f481bb2097",
             "name" : "ValidatePeople",
             "type" : "PROCESSOR"
@@ -229,8 +259,8 @@
         "name" : "validating-pipeline-with-great-expectations",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 212.62983848853486,
-          "y" : -80.20491764980369
+          "x" : 360.0,
+          "y" : -64.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -657,7 +687,148 @@
           "type" : "org.apache.nifi.processors.standard.ExecuteStreamCommand",
           "yieldDuration" : "1 sec"
         }, {
-          "autoTerminatedRelationships" : [ "success", "failure" ],
+          "autoTerminatedRelationships" : [ "success", "failure", "retry" ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-elasticsearch-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.12.1"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "99de4b92-8c70-3e7f-a4dd-50192a5bcec1",
+          "identifier" : "6661ed01-a400-323e-a0c0-765b6cb88918",
+          "name" : "PutElasticsearchHttp",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : -568.0,
+            "y" : 168.0
+          },
+          "properties" : {
+            "elasticsearch-http-response-timeout" : "15 secs",
+            "put-es-type" : "_doc",
+            "put-es-index" : "scf",
+            "elasticsearch-http-url" : "http://localhost:9200",
+            "put-es-batch-size" : "100",
+            "elasticsearch-http-connect-timeout" : "5 secs",
+            "put-es-index-op" : "index",
+            "Character Set" : "UTF-8"
+          },
+          "propertyDescriptors" : {
+            "elasticsearch-http-response-timeout" : {
+              "displayName" : "Response Timeout",
+              "identifiesControllerService" : false,
+              "name" : "elasticsearch-http-response-timeout",
+              "sensitive" : false
+            },
+            "put-es-id-attr" : {
+              "displayName" : "Identifier Attribute",
+              "identifiesControllerService" : false,
+              "name" : "put-es-id-attr",
+              "sensitive" : false
+            },
+            "put-es-type" : {
+              "displayName" : "Type",
+              "identifiesControllerService" : false,
+              "name" : "put-es-type",
+              "sensitive" : false
+            },
+            "put-es-index" : {
+              "displayName" : "Index",
+              "identifiesControllerService" : false,
+              "name" : "put-es-index",
+              "sensitive" : false
+            },
+            "proxy-configuration-service" : {
+              "displayName" : "Proxy Configuration Service",
+              "identifiesControllerService" : true,
+              "name" : "proxy-configuration-service",
+              "sensitive" : false
+            },
+            "elasticsearch-http-url" : {
+              "displayName" : "Elasticsearch URL",
+              "identifiesControllerService" : false,
+              "name" : "elasticsearch-http-url",
+              "sensitive" : false
+            },
+            "put-es-batch-size" : {
+              "displayName" : "Batch Size",
+              "identifiesControllerService" : false,
+              "name" : "put-es-batch-size",
+              "sensitive" : false
+            },
+            "SSL Context Service" : {
+              "displayName" : "SSL Context Service",
+              "identifiesControllerService" : true,
+              "name" : "SSL Context Service",
+              "sensitive" : false
+            },
+            "elasticsearch-http-connect-timeout" : {
+              "displayName" : "Connection Timeout",
+              "identifiesControllerService" : false,
+              "name" : "elasticsearch-http-connect-timeout",
+              "sensitive" : false
+            },
+            "Username" : {
+              "displayName" : "Username",
+              "identifiesControllerService" : false,
+              "name" : "Username",
+              "sensitive" : false
+            },
+            "put-es-index-op" : {
+              "displayName" : "Index Operation",
+              "identifiesControllerService" : false,
+              "name" : "put-es-index-op",
+              "sensitive" : false
+            },
+            "elasticsearch-http-proxy-host" : {
+              "displayName" : "Proxy Host",
+              "identifiesControllerService" : false,
+              "name" : "elasticsearch-http-proxy-host",
+              "sensitive" : false
+            },
+            "proxy-username" : {
+              "displayName" : "Proxy Username",
+              "identifiesControllerService" : false,
+              "name" : "proxy-username",
+              "sensitive" : false
+            },
+            "proxy-password" : {
+              "displayName" : "Proxy Password",
+              "identifiesControllerService" : false,
+              "name" : "proxy-password",
+              "sensitive" : true
+            },
+            "elasticsearch-http-proxy-port" : {
+              "displayName" : "Proxy Port",
+              "identifiesControllerService" : false,
+              "name" : "elasticsearch-http-proxy-port",
+              "sensitive" : false
+            },
+            "Character Set" : {
+              "displayName" : "Character Set",
+              "identifiesControllerService" : false,
+              "name" : "Character Set",
+              "sensitive" : false
+            },
+            "Password" : {
+              "displayName" : "Password",
+              "identifiesControllerService" : false,
+              "name" : "Password",
+              "sensitive" : true
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.elasticsearch.PutElasticsearchHttp",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ "failure" ],
           "bulletinLevel" : "WARN",
           "bundle" : {
             "artifact" : "nifi-standard-nar",

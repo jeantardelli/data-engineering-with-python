@@ -1,6 +1,7 @@
 flows:
-  7cd9102c-f1f0-47d6-9eaf-8a3ddbe62944: {ver: 3, file: validating-with-great-expectations.snapshot,
-    comments: '', author: anonymous, created: 1607360711803, flowName: validating-with-great-expectations,
-    flowDesc: 'This pipeline illustrates a Nifi Flow with great expectations library '}
+  7cd9102c-f1f0-47d6-9eaf-8a3ddbe62944: {ver: 4, file: validating-with-great-expectations.snapshot,
+    comments: Versioning with Nifi Register (8b), author: anonymous, created: 1607361199782,
+    flowName: validating-with-great-expectations, flowDesc: 'This pipeline illustrates
+      a Nifi Flow with great expectations library '}
 layoutVer: 1
 bucketId: 9d211feb-ffeb-4be1-987d-2fe9f6c0b716
