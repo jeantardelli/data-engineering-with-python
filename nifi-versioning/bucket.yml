@@ -1,8 +1,8 @@
 flows:
-  194ec5b4-837d-451b-b567-3e9a45a5612a: {ver: 1, file: SCF_Pipeline.snapshot, comments: Initial
-      commit - SCF pipeline (9b), author: anonymous, created: 1607364828009, flowName: SCF
-      Pipeline, flowDesc: This pipeline illustrates the data collection from SeeClickFix
-      to Elasticsearch}
+  194ec5b4-837d-451b-b567-3e9a45a5612a: {ver: 2, file: SCF_Pipeline.snapshot, comments: SCF
+      Pipeline - Adding Slack Messaging (9c), author: anonymous, created: 1607367247096,
+    flowName: SCF Pipeline, flowDesc: This pipeline illustrates the data collection
+      from SeeClickFix to Elasticsearch}
   7cd9102c-f1f0-47d6-9eaf-8a3ddbe62944: {ver: 4, file: validating-with-great-expectations.snapshot,
     comments: Versioning with Nifi Register (8b), author: anonymous, created: 1607361199782,
     flowName: validating-with-great-expectations, flowDesc: 'This pipeline illustrates

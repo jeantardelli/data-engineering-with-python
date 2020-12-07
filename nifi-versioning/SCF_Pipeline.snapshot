@@ -374,6 +374,36 @@
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "0834d56d-8af1-3ccf-b900-dacb32fd3c44",
+            "id" : "838ed8ce-fac7-3bd7-b122-0730c9b2fb14",
+            "name" : "PutSlack",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "0834d56d-8af1-3ccf-b900-dacb32fd3c44",
+          "identifier" : "257aa3a7-6c32-3ff4-ad60-3ea703e2304d",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "0834d56d-8af1-3ccf-b900-dacb32fd3c44",
+            "id" : "232ab32d-aba1-31bf-9796-77909c42b94c",
+            "name" : "ElasticSCF",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
         } ],
         "controllerServices" : [ ],
         "flowFileConcurrency" : "UNBOUNDED",
@@ -386,7 +416,7 @@
         "outputPorts" : [ ],
         "position" : {
           "x" : 336.0,
-          "y" : -152.0
+          "y" : -160.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -511,6 +541,75 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.SplitJson",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ "success", "failure" ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-slack-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.12.1"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "0834d56d-8af1-3ccf-b900-dacb32fd3c44",
+          "identifier" : "838ed8ce-fac7-3bd7-b122-0730c9b2fb14",
+          "name" : "PutSlack",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 1312.0,
+            "y" : -96.0
+          },
+          "properties" : {
+            "webhook-text" : "${id:append(': Record failed Upsert Elasticsearch')}",
+            "username" : "jeantardelli"
+          },
+          "propertyDescriptors" : {
+            "icon-emoji" : {
+              "displayName" : "Icon Emoji",
+              "identifiesControllerService" : false,
+              "name" : "icon-emoji",
+              "sensitive" : false
+            },
+            "webhook-url" : {
+              "displayName" : "Webhook URL",
+              "identifiesControllerService" : false,
+              "name" : "webhook-url",
+              "sensitive" : true
+            },
+            "webhook-text" : {
+              "displayName" : "Webhook Text",
+              "identifiesControllerService" : false,
+              "name" : "webhook-text",
+              "sensitive" : false
+            },
+            "channel" : {
+              "displayName" : "Channel",
+              "identifiesControllerService" : false,
+              "name" : "channel",
+              "sensitive" : false
+            },
+            "icon-url" : {
+              "displayName" : "Icon URL",
+              "identifiesControllerService" : false,
+              "name" : "icon-url",
+              "sensitive" : false
+            },
+            "username" : {
+              "displayName" : "Username",
+              "identifiesControllerService" : false,
+              "name" : "username",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.slack.PutSlack",
           "yieldDuration" : "1 sec"
         }, {
           "autoTerminatedRelationships" : [ "failure" ],
@@ -750,7 +849,7 @@
           "type" : "org.apache.nifi.processors.script.ExecuteScript",
           "yieldDuration" : "1 sec"
         }, {
-          "autoTerminatedRelationships" : [ "success", "failure", "retry" ],
+          "autoTerminatedRelationships" : [ "success", "retry" ],
           "bulletinLevel" : "WARN",
           "bundle" : {
             "artifact" : "nifi-elasticsearch-nar",
