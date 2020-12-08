@@ -3,10 +3,11 @@ flows:
       Pipeline - Adding Slack Messaging (9c), author: anonymous, created: 1607367247096,
     flowName: SCF Pipeline, flowDesc: This pipeline illustrates the data collection
       from SeeClickFix to Elasticsearch}
-  0fa91b70-c872-46e9-86a0-f5ad674ad885: {ver: 1, file: mysql-to-elasticsearch.snapshot,
-    comments: MySQL to Elasticsearch Pipeline (10a), author: anonymous, created: 1607460690833,
-    flowName: mysql-to-elasticsearch, flowDesc: 'This flow illustrates a pipeline
-      that extracts data from MySQL database and loads it to Elasticsearch   '}
+  0fa91b70-c872-46e9-86a0-f5ad674ad885: {ver: 2, file: mysql-to-elasticsearch.snapshot,
+    comments: MySQL to Elasticsearch Pipeline - Using NiFi variables (10b), author: anonymous,
+    created: 1607461833989, flowName: mysql-to-elasticsearch, flowDesc: 'This flow
+      illustrates a pipeline that extracts data from MySQL database and loads it to
+      Elasticsearch   '}
   7cd9102c-f1f0-47d6-9eaf-8a3ddbe62944: {ver: 4, file: validating-with-great-expectations.snapshot,
     comments: Versioning with Nifi Register (8b), author: anonymous, created: 1607361199782,
     flowName: validating-with-great-expectations, flowDesc: 'This pipeline illustrates

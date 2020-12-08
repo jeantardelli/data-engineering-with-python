@@ -353,8 +353,8 @@
         "name" : "mysql-to-elasticsearch",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 976.0,
-          "y" : 224.0
+          "x" : 984.0,
+          "y" : 216.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -380,8 +380,8 @@
           "properties" : {
             "elasticsearch-http-response-timeout" : "15 secs",
             "put-es-type" : "doc",
-            "put-es-index" : "fromnifi",
-            "elasticsearch-http-url" : "http://localhost:9200",
+            "put-es-index" : "${index}",
+            "elasticsearch-http-url" : "${elastic}",
             "put-es-batch-size" : "100",
             "elasticsearch-http-connect-timeout" : "5 secs",
             "put-es-index-op" : "index",
@@ -670,7 +670,10 @@
           "yieldDuration" : "1 sec"
         } ],
         "remoteProcessGroups" : [ ],
-        "variables" : { }
+        "variables" : {
+          "elastic" : "http://localhost:9200",
+          "index" : "nifivariable"
+        }
       },
       "flowEncodingVersion" : "1.0",
       "parameterContexts" : { }
