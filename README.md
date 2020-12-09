@@ -40,5 +40,14 @@ If you want to stop/kill the working environment, run the command:
 $ ./stop-working-environment
 ```
 
+## Creating DB user
+
+To create the MySQL user, run the following statement as the root user:
+
+```bash
+$ mysql -u root -p -e "SOURCE sql-user/create-user.sql"
+```
+This will also grant access to the databases used in this repo.
+
 ## License
 [MIT](LICENSE)
