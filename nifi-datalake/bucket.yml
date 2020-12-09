@@ -1,4 +1,9 @@
 flows:
+  2289c8b1-d5b6-4397-a10e-265cf024546c: {ver: 1, file: scan-data-lake.snapshot, comments: 'Building
+      a Production Data Pipeline - NiFi Pipeline, ScanContent (11e)', author: anonymous,
+    created: 1607525897076, flowName: scan-data-lake, flowDesc: This pipeline imports
+      a file dictionary and sends a message in the Slack app when a record matches
+      any file content.}
   5d9aad04-4e8e-446b-86bd-25149bfcf030: {ver: 1, file: read-data-lake.snapshot, comments: 'Building
       a Production Data Pipeline - NiFi Pipeline, Reading from Datalake (11c)', author: anonymous,
     created: 1607521190028, flowName: read-data-lake, flowDesc: Reads files from the
