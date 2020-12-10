@@ -1,12 +1,16 @@
 flows:
+  8ffd8626-e9bd-48e1-9490-d33e0504f046: {ver: 1, file: InsertStaging.snapshot, comments: 'Building
+      a Production Data Pipeline - NiFi Pipeline, Inserting Staging (11g)', author: anonymous,
+    created: 1607606660493, flowName: InsertStaging, flowDesc: This pipeline inserts
+      data into the staging table}
+  5d9aad04-4e8e-446b-86bd-25149bfcf030: {ver: 1, file: read-data-lake.snapshot, comments: 'Building
+      a Production Data Pipeline - NiFi Pipeline, Reading from Datalake (11c)', author: anonymous,
+    created: 1607521190028, flowName: read-data-lake, flowDesc: Reads files from the
+      datalake}
   2289c8b1-d5b6-4397-a10e-265cf024546c: {ver: 1, file: scan-data-lake.snapshot, comments: 'Building
       a Production Data Pipeline - NiFi Pipeline, ScanContent (11e)', author: anonymous,
     created: 1607525897076, flowName: scan-data-lake, flowDesc: This pipeline imports
       a file dictionary and sends a message in the Slack app when a record matches
       any file content.}
-  5d9aad04-4e8e-446b-86bd-25149bfcf030: {ver: 1, file: read-data-lake.snapshot, comments: 'Building
-      a Production Data Pipeline - NiFi Pipeline, Reading from Datalake (11c)', author: anonymous,
-    created: 1607521190028, flowName: read-data-lake, flowDesc: Reads files from the
-      datalake}
 layoutVer: 1
 bucketId: c491595f-5c1c-4c27-a416-402d67e150ca
