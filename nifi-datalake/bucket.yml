@@ -7,6 +7,10 @@ flows:
       a Production Data Pipeline - NiFi Pipeline, Query Staging (11g)', author: anonymous,
     created: 1607607733226, flowName: query-staging, flowDesc: Pipeline that queries
       the staging area}
+  32e4d834-a9a6-408b-8364-464a665195d5: {ver: 1, file: validate-staging.snapshot,
+    comments: 'Building a Production Data Pipeline - NiFi Pipeline, Inserting Staging
+      (11i)', author: anonymous, created: 1607607869020, flowName: validate-staging,
+    flowDesc: Pipeline that validates the staging area using great expectations}
   5d9aad04-4e8e-446b-86bd-25149bfcf030: {ver: 1, file: read-data-lake.snapshot, comments: 'Building
       a Production Data Pipeline - NiFi Pipeline, Reading from Datalake (11c)', author: anonymous,
     created: 1607521190028, flowName: read-data-lake, flowDesc: Reads files from the
