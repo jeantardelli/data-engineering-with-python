@@ -21,7 +21,7 @@ def queryMySQL():
     This funtion creates a connection with MySQL using mysql.connector,
     execute the sql query using pandas.read_sql() method and then use
     pandas.to_csv() to write data to disk."""
-    db = mysql.connector.connect(option_files='sql-user/my.ini')
+    db = mysql.connector.connect(option_files='../sql-user/my.ini')
     df = pd.read_sql("SELECT name, city FROM dataengineering.people", db)
     df.to_csv('mysqldata.csv')
     print("--------Data Saved---------")

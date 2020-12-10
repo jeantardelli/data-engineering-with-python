@@ -15,6 +15,7 @@ This repo contains the source code for data engineering with Python.
 
 ## Directories
 
+* airflow-dag: this directory contains the airflow DAG modules used in this repo
 * writing-reading-data: this directory contains modules that create and read fake data
 * sql-user: this directory contains the query to create a user and its credentials data
 * load-database: this directory contains modules that load and query data from MySQL
