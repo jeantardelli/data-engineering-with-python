@@ -7,6 +7,10 @@ flows:
       a Production Data Pipeline - NiFi Pipeline, Query Staging (11g)', author: anonymous,
     created: 1607607733226, flowName: query-staging, flowDesc: Pipeline that queries
       the staging area}
+  7cc2ce9c-06e1-4f15-bb53-ab5d7d57eaae: {ver: 1, file: insert-warehouse.snapshot,
+    comments: 'Building a Production Data Pipeline - NiFi Pipeline, Inserting Staging
+      (11j)', author: anonymous, created: 1607607926498, flowName: insert-warehouse,
+    flowDesc: Pipeline that inserts data into the data warehouse}
   32e4d834-a9a6-408b-8364-464a665195d5: {ver: 1, file: validate-staging.snapshot,
     comments: 'Building a Production Data Pipeline - NiFi Pipeline, Inserting Staging
       (11i)', author: anonymous, created: 1607607869020, flowName: validate-staging,
