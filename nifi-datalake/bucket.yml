@@ -3,6 +3,10 @@ flows:
       a Production Data Pipeline - NiFi Pipeline, Inserting Staging (11g)', author: anonymous,
     created: 1607606660493, flowName: InsertStaging, flowDesc: This pipeline inserts
       data into the staging table}
+  045d4795-2b90-46dc-a623-4676bf6588fb: {ver: 1, file: query-staging.snapshot, comments: 'Building
+      a Production Data Pipeline - NiFi Pipeline, Query Staging (11g)', author: anonymous,
+    created: 1607607733226, flowName: query-staging, flowDesc: Pipeline that queries
+      the staging area}
   5d9aad04-4e8e-446b-86bd-25149bfcf030: {ver: 1, file: read-data-lake.snapshot, comments: 'Building
       a Production Data Pipeline - NiFi Pipeline, Reading from Datalake (11c)', author: anonymous,
     created: 1607521190028, flowName: read-data-lake, flowDesc: Reads files from the
