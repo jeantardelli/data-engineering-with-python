@@ -13,11 +13,9 @@ fake = Faker()
 userid = 1
 
 for _ in range(1000):
-    name = fake.name()
-    filename = name.replace(" ", "-") + ".json"
 
     data = {'userid': userid,
-            'name': name,
+            'name': fake.name(),
             'age': fake.random_int(min=18, max=101, step=1),
             'street': fake.street_address(),
             'city': fake.city(),
@@ -27,6 +25,11 @@ for _ in range(1000):
             'lat': float(fake.latitude())
             }
 
+    filename = data['name'].replace(" ", "-") + ".json"
+    if os.path.exists(filename):
+        data['name'] += ' Junior'
+        filename = data['name'].replace(" ", "-") + ".json"
+    
     datajson = json.dumps(data)
     output = open(filename, 'w')
     output.write(datajson)
