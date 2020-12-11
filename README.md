@@ -16,18 +16,19 @@ This repo contains the source code for data engineering with Python.
 ## Directories
 
 * airflow-dag: this directory contains the airflow DAG modules used in this repo
-* writing-reading-data: this directory contains modules that create and read fake data
-* sql-user: this directory contains the query to create a user and its credentials data
+* great_expectations: contains all the important components of a local Great Expectation deployment
+* kafka-producer-consumer: contains modules that produce and consume Kafka topics in Python
 * load-database: this directory contains modules that load and query data from MySQL
 * load-nosql: this directory contains modules that load and query data from Elasticsearch
-* scooter-data: this directory contains the scooter dataset and wrangling data modules (pandas)
-* nifi-templates: this directory contains different Apache Nifi pipeline templates
+* nifi-datalake: this directory contains files to simulate reading from the datalike which usually is a hdfs
 * nifi-files: this directory contains the files derived from the Nifi template pipelines
-* nifi-scripts: this directory contains shell scripts that are used with ExecuteStreamCommand in Nifi
-* nifi-versioning: this directory contains Nifi pipelines with version control (NiFi Regsitry)
 * nifi-scanfiles: this directory contains dictionary files read by ScanContent processor (e.g. VIP)
-* datalake: this directory contains files to simulate reading from the datalike which usually is a hdfs
-* great_expectations: contains all the important components of a local Great Expectation deployment
+* nifi-scripts: this directory contains shell scripts that are used with ExecuteStreamCommand in Nifi
+* nifi-templates: this directory contains different Apache Nifi pipeline templates
+* nifi-versioning: this directory contains Nifi pipelines with version control (NiFi Regsitry)
+* scooter-data: this directory contains the scooter dataset and wrangling data modules (pandas)
+* sql-user: this directory contains the query to create a user and its credentials data
+* writing-reading-data: this directory contains modules that create and read fake data
 
 ## Setup working environment
 
