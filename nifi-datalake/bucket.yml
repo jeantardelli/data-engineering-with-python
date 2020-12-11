@@ -15,6 +15,10 @@ flows:
     comments: 'Building a Production Data Pipeline - NiFi Pipeline, Inserting Staging
       (11j)', author: anonymous, created: 1607607926498, flowName: insert-warehouse,
     flowDesc: Pipeline that inserts data into the data warehouse}
+  7a0ccd1f-68d2-4ecd-b74b-ca3f4328b2ab: {ver: 1, file: kafka-consumer.snapshot, comments: Streaming
+      data with Apache Kafka - Apache NiFi Consumer (13c), author: anonymous, created: 1607711372401,
+    flowName: kafka-consumer, flowDesc: This pipeline illustrates how to create a
+      cluster of Kafka consumer nodes in Apache NiFi}
   c388a5ec-c528-4b62-8d2e-c456621f754b: {ver: 1, file: kafka-producer.snapshot, comments: Streaming
       data with Apache Kafka - Apache Nifi Producer (13b), author: anonymous, created: 1607711166479,
     flowName: kafka-producer, flowDesc: 'This pipeline illustrates how to produce
