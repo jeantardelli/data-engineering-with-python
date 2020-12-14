@@ -26,6 +26,7 @@ This repo contains the source code for data engineering with Python.
 * nifi-scripts: this directory contains shell scripts that are used with ExecuteStreamCommand in Nifi
 * nifi-templates: this directory contains different Apache Nifi pipeline templates
 * nifi-versioning: this directory contains Nifi pipelines with version control (NiFi Regsitry)
+* pyspark: this directory contains Jupyter Notebooks that connect to PySpark data processor
 * scooter-data: this directory contains the scooter dataset and wrangling data modules (pandas)
 * sql-user: this directory contains the query to create a user and its credentials data
 * writing-reading-data: this directory contains modules that create and read fake data
