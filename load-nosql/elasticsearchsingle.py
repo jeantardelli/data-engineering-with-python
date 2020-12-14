@@ -1,6 +1,6 @@
 """elasticsearchsingle
 
-This module ilustrates how to load data into Elastisearch database, a NoSQL
+This module illustrates how to load data into Elastisearch database, a NoSQL
 columnar storage tool.
 """
 from elasticsearch import Elasticsearch

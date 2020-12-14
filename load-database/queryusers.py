@@ -1,6 +1,6 @@
 """queryusers
 
-This module ilustrates how to query a user using mysql-connector-python
+This module illustrates how to query a user using mysql-connector-python
 library.
 """
 import csv

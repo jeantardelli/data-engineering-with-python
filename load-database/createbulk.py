@@ -1,6 +1,6 @@
 """createbulk
 
-This module ilustrates how to connect to MySQL and load bulk data in python
+This module illustrates how to connect to MySQL and load bulk data in python
 using the mysql-connector-python library.
 """
 import mysql.connector

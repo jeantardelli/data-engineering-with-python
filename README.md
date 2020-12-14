@@ -20,7 +20,7 @@ This repo contains the source code for data engineering with Python.
 * kafka-producer-consumer: contains modules that produce and consume Kafka topics in Python
 * load-database: this directory contains modules that load and query data from MySQL
 * load-nosql: this directory contains modules that load and query data from Elasticsearch
-* nifi-datalake: this directory contains files to simulate reading from the datalike which usually is a hdfs
+* nifi-datalake: this directory contains Nifi Pipelines to simulate reading data from the datalike
 * nifi-files: this directory contains the files derived from the Nifi template pipelines
 * nifi-scanfiles: this directory contains dictionary files read by ScanContent processor (e.g. VIP)
 * nifi-scripts: this directory contains shell scripts that are used with ExecuteStreamCommand in Nifi

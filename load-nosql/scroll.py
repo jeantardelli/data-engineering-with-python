@@ -1,6 +1,6 @@
 """scroll
 
-This module ilustrates how to use the scroll, a built-in Elasticsearch method.
+This module illustrates how to use the scroll, a built-in Elasticsearch method.
 """
 from elasticsearch import Elasticsearch
 

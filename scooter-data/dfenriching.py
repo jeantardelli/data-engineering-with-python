@@ -1,6 +1,6 @@
 """dfenriching
 
-This module ilustrate examples that enrich a dataset using pandas.
+This module illustrate examples that enrich a dataset using pandas.
 """
 import pandas as pd
 

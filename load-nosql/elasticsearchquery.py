@@ -1,6 +1,6 @@
 """elasticsearchquery
 
-This module ilustrates how to query Elasticsearch with Python.
+This module illustrates how to query Elasticsearch with Python.
 """
 import pandas as pd
 from elasticsearch import Elasticsearch

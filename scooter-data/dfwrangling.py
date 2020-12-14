@@ -1,6 +1,6 @@
 """dfwrangling
 
-This module ilustrates some common data modification using pandas.
+This module illustrates some common data modification using pandas.
 """
 import pandas as pd
 

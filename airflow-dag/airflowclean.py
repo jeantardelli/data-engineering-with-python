@@ -1,6 +1,6 @@
 """airflowclean
 
-This module ilustrates a cleaning pipeline in Airflow. The following code will
+This module illustrates a cleaning pipeline in Airflow. The following code will
 clean data, filter in and write it out to disk.
 """
 import datetime as dt

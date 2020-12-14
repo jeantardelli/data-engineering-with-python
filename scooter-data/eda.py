@@ -1,6 +1,6 @@
 """eda
 
-This module ilustrates the process of understanding a given dataset. This
+This module illustrates the process of understanding a given dataset. This
 process is called exploratory data analysis (EDA). More in-depth analysis
 can be done - such as distribution of the data, or the skewness - but these
 are not covered here.

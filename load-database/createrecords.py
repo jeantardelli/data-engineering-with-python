@@ -1,6 +1,6 @@
 """createrecords
 
-This module ilustrates how to connect to MySQL and create a record in python
+This module illustrates how to connect to MySQL and create a record in python
 using the mysql-connector-python library.
 """
 import mysql.connector

@@ -1,6 +1,6 @@
 """airflowcsv
 
-This module ilustrates a data pipeline in Apache Aiflow, using Python and Bash
+This module illustrates a data pipeline in Apache Aiflow, using Python and Bash
 operators to create tasks that can be combined into a DAG.
 """
 import datetime as dt

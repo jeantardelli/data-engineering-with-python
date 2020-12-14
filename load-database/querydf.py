@@ -1,6 +1,6 @@
 """querydf
 
-This module ilustrates how to query a MySQL database using a DataFrame object.
+This module illustrates how to query a MySQL database using a DataFrame object.
 """
 import mysql.connector
 import pandas as pd

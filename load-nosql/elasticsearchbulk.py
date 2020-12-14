@@ -1,6 +1,6 @@
 """elasticsearchbulk
 
-This module ilustrates how to add bulks of data to Elasticsearch using Python.
+This module illustrates how to add bulks of data to Elasticsearch using Python.
 """
 from elasticsearch import Elasticsearch
 from elasticsearch import helpers

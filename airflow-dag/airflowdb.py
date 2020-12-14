@@ -1,6 +1,6 @@
 """airflowdb
 
-This module ilustrates a DAG that queries MySQL database, save it as a CSV
+This module illustrates a DAG that queries MySQL database, save it as a CSV
 file and the read it and write it to an Elasticsearch index.
 
 This DAG is composed of only two - atomic - tasks.
