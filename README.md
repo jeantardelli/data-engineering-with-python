@@ -5,7 +5,7 @@
 
 ## Data Engineering w/ Python
 
-This repo contains my code and pipelines explained on [Data Engineering with Python] (https://github.com/PacktPublishing/Data-Engineering-with-Python) book. 
+This repo contains my code and pipelines explained on [Data Engineering with Python](https://github.com/PacktPublishing/Data-Engineering-with-Python) book. 
 
 ## Software and Hardware List
 
